@@ -3,51 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Wisdom's web development and cybersecurity portfolio.">
+    <title>Wisdom | Portfolio</title>
     <link rel="stylesheet" href="code.css">
 </head>
 <body>
-       
-        <nav>
-             <p>sign</p>
-         <div class="nav-menu">
-               <a href="">Home</a>
-            <a href="">projects</a>
-            <a href="">experience</a>
-            <a href="">contact</a>
-
-         </div>
+    <header class="site-header">
+        <nav aria-label="Main navigation">
+            <a class="brand" href="#home">Wisdom</a>
+            <div class="nav-menu">
+                <a href="#home">Home</a>
+                <a href="#projects">Projects</a>
+                <a href="#experience">Experience</a>
+                <a href="#contact">Contact</a>
+            </div>
         </nav>
-        <div class="hero-img">
-           <img src="https://static.vecteezy.com/system/resources/previews/041/854/061/non_2x/man-working-on-laptop-icon-illustration-work-from-home-mascot-cartoon-character-people-icon-concept-isolated-flat-cartoon-style-suitable-for-web-landing-page-banner-flyer-sticker-card-vector.jpg" class="hero"> 
+    </header>
 
-           <h1>HI im WISDOM</h1>
-           <p>An expert in the field of web development and cyber security,<br>i provide  the energy needed to kickstart stagnant projects,challenge the quo ,and dissolve operational inefficiences.</p>
- <div class="herobtn">
-         <button>GET IN TOUCH</button>
-         <BUTton class="download">DOWNLOAD CV</BUTton>
-        </div>
-        <div><P class="BONE">EXPERIENCE WITH</P></div>
-        <div>
-            <h2 class="DONE">PROJECTS</h2>
-        </div>
-        <div class="hype">
-            <img src="https://media.licdn.com/dms/image/v2/D5612AQGYVMn93dK4aQ/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1719813183657?e=2147483647&v=beta&t=fEYeCuOYWWE74ZfMbaNUkqWabqgWrh3Lb2BJoDYWm0A" alt="">
-            <img src="https://tse3.mm.bing.net/th/id/OIP.KwHImIIJ6292D7O1jZEdcgHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="">
-        </div>
-        <div class="things">
-            <h2>EXPERIENCE  </h2>
-            <h4>lead software engineer at google</h4>
-            <p>as a software engineer at google ,i played an im portant role in training new and aspiring software engineers</p>
-            <h4>software engineer at DITS</h4>
-            <P>at DITS,i focused on the design and implementation of frontend systems </P>
-        </div>
-        <div class="info">
-            <h2>contact</h2>
-            <p>wisdomchinedu479@gmail.com <br>tel(08000388279)</p>
-        </div>
-        </div>
+    <main>
+        <section class="hero" id="home">
+            <img class="hero-image" src="https://static.vecteezy.com/system/resources/previews/041/854/061/non_2x/man-working-on-laptop-icon-illustration-work-from-home-mascot-cartoon-character-people-icon-concept-isolated-flat-cartoon-style-suitable-for-web-landing-page-banner-flyer-sticker-card-vector.jpg" alt="Illustration of a person working on a laptop">
+            <h1>Hi, I'm Wisdom</h1>
+            <p class="hero-copy">An expert in web development and cybersecurity, I provide the energy needed to kickstart stagnant projects, challenge the quo, and dissolve operational inefficiencies.</p>
+            <div class="hero-buttons">
+                <a class="button button-primary" href="#contact">Get in touch</a>
+                <button class="button button-secondary" type="button">Download CV</button>
+            </div>
+            <p class="experience-label">Experience with</p>
+        </section>
 
-       
+        <section class="content-section projects" id="projects">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <img src="https://media.licdn.com/dms/image/v2/D5612AQGYVMn93dK4aQ/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1719813183657?e=2147483647&v=beta&t=fEYeCuOYWWE74ZfMbaNUkqWabqgWrh3Lb2BJoDYWm0A" alt="Project preview">
+                <img src="https://tse3.mm.bing.net/th/id/OIP.KwHImIIJ6292D7O1jZEdcgHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Project preview">
+            </div>
+        </section>
+
+        <section class="content-section experience" id="experience">
+            <h2>Experience</h2>
+            <article>
+                <h3>Lead software engineer at Google</h3>
+                <p>As a software engineer at Google, I played an important role in training new and aspiring software engineers.</p>
+            </article>
+            <article>
+                <h3>Software engineer at DITS</h3>
+                <p>At DITS, I focused on the design and implementation of frontend systems.</p>
+            </article>
+        </section>
+
+        <section class="content-section contact" id="contact">
+            <h2>Contact</h2>
+            <a href="mailto:wisdomchinedu479@gmail.com">wisdomchinedu479@gmail.com</a>
+            <a href="tel:08000388279">Tel: 08000388279</a>
+        </section>
+    </main>
 </body>
 </html>

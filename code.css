@@ -1,89 +1,228 @@
-*{
-margin: 0px;
-padding: 0px;
-box-sizing: border-box;
-}
-nav{
-display: flex;  
-justify-content: space-between;
-padding: 20px 5%;
-align-items: flex-end;
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-color: white;
+* {
+    box-sizing: border-box;
 }
 
-.nav-menu{
-    display: flex;
-    column-gap: 20px;
-    text-decoration: none;
+html {
+    scroll-behavior: smooth;
 }
-body{
-    color: white;
-    background-color: black;
+
+body {
+    margin: 0;
+    color: #fff;
+    background: #000;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.6;
 }
-.nav-menu a{
-    color: white;
+
+a {
+    color: inherit;
+}
+
+.site-header {
+    width: min(100% - 3rem, 70rem);
+    margin: 0 auto;
+}
+
+.site-header nav,
+.nav-menu {
+    display: flex;
+    align-items: center;
+}
+
+.site-header nav {
+    justify-content: space-between;
+    gap: 1.5rem;
+    min-height: 5rem;
+}
+
+.brand {
+    font-size: 1.25rem;
+    font-weight: 700;
     text-decoration: none;
 }
-.hero{
-    align-items: center;
-    height: 300px;
-    width: 300px;
-    border-radius: 100%;
-}
-.hero-img{
-    text-align: center;
-    padding: 80px 25%;
-}
-.button{
-    text-align: center;
-}
-.hero-img h1{
-    font-size: 35px;
-    line-height: 35px;
-    margin: 15px 0px;
-    font-weight: 800;
 
+.nav-menu {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 0.75rem 1.5rem;
 }
-.hero-img p{
-    font-size: 14px;
-    color: gray;
-    margin-bottom: 40PX;
+
+.nav-menu a {
+    color: #ddd;
+    text-decoration: none;
 }
-.herobtn{
-display: flex;
-justify-content: center;
-column-gap: 20px;
+
+.nav-menu a:hover,
+.nav-menu a:focus-visible,
+.contact a:hover,
+.contact a:focus-visible {
+    color: #ff6b6b;
 }
-.herobtn button{
-padding: 10px 20px;
-border-radius: 25px;
-border: 2px solid white;
-font-weight: 600;
+
+main {
+    width: min(100% - 3rem, 60rem);
+    margin: 0 auto;
 }
-.download{
-    background-color: transparent;
-    color: white;
-}
-.hype{
+
+.hero {
     display: flex;
-    height: 200px;
-    width: 300px;
+    flex-direction: column;
+    align-items: center;
+    padding: clamp(2.5rem, 8vw, 5rem) 0 3rem;
+    text-align: center;
 }
-.things{
-    padding: 20px 10px;
-    text-align: left;
 
+.hero-image {
+    width: clamp(10rem, 35vw, 18rem);
+    aspect-ratio: 1;
+    margin-bottom: 1rem;
+    border-radius: 50%;
+    object-fit: cover;
 }
-.things{
-    display:;
-    text-align:left;
-    
+
+.hero h1 {
+    margin: 0.5rem 0;
+    font-size: clamp(2rem, 7vw, 3.5rem);
+    line-height: 1.15;
 }
-.info h2{
-    color: red;
+
+.hero-copy {
+    max-width: 42rem;
+    margin: 0.75rem 0 1.75rem;
+    color: #aaa;
 }
-.things h2{
-    color: red;
+
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+}
+
+.button {
+    display: inline-flex;
+    min-height: 2.75rem;
+    align-items: center;
+    justify-content: center;
+    padding: 0.55rem 1.25rem;
+    border: 2px solid #fff;
+    border-radius: 999px;
+    font-family: inherit;
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+}
+
+.button-primary {
+    color: #111;
+    background: #fff;
+}
+
+.button-secondary {
+    background: transparent;
+}
+
+.button:hover,
+.button:focus-visible {
+    border-color: #ff6b6b;
+}
+
+.experience-label {
+    margin: 2rem 0 0;
+    color: #999;
+    font-size: 0.9rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.content-section {
+    padding: 2.5rem 0;
+}
+
+.content-section h2 {
+    margin: 0 0 1.5rem;
+    color: #ff6b6b;
+    font-size: clamp(1.5rem, 5vw, 2rem);
+    text-transform: uppercase;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.project-grid img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 0.75rem;
+    object-fit: cover;
+}
+
+.experience article + article {
+    margin-top: 1.75rem;
+}
+
+.experience h3 {
+    margin: 0 0 0.35rem;
+    font-size: 1.1rem;
+}
+
+.experience p {
+    margin: 0;
+    color: #aaa;
+}
+
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.5rem;
+    padding-bottom: 3rem;
+}
+
+.contact h2 {
+    flex-basis: 100%;
+    margin-bottom: 0.25rem;
+}
+
+.contact a {
+    overflow-wrap: anywhere;
+    text-decoration: none;
+}
+
+@media (max-width: 40rem) {
+    .site-header {
+        width: min(100% - 2rem, 70rem);
+    }
+
+    .site-header nav {
+        min-height: auto;
+        flex-direction: column;
+        justify-content: center;
+        gap: 0.75rem;
+        padding: 1rem 0;
+    }
+
+    .nav-menu {
+        justify-content: center;
+        gap: 0.5rem 1rem;
+    }
+
+    main {
+        width: min(100% - 2rem, 60rem);
+    }
+
+    .hero {
+        padding-top: 2rem;
+    }
+
+    .hero-copy {
+        font-size: 0.95rem;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
 }
