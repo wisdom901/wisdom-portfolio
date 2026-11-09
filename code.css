@@ -1,0 +1,89 @@
+*{
+margin: 0px;
+padding: 0px;
+box-sizing: border-box;
+}
+nav{
+display: flex;  
+justify-content: space-between;
+padding: 20px 5%;
+align-items: flex-end;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+color: white;
+}
+
+.nav-menu{
+    display: flex;
+    column-gap: 20px;
+    text-decoration: none;
+}
+body{
+    color: white;
+    background-color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.nav-menu a{
+    color: white;
+    text-decoration: none;
+}
+.hero{
+    align-items: center;
+    height: 300px;
+    width: 300px;
+    border-radius: 100%;
+}
+.hero-img{
+    text-align: center;
+    padding: 80px 25%;
+}
+.button{
+    text-align: center;
+}
+.hero-img h1{
+    font-size: 35px;
+    line-height: 35px;
+    margin: 15px 0px;
+    font-weight: 800;
+
+}
+.hero-img p{
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 40PX;
+}
+.herobtn{
+display: flex;
+justify-content: center;
+column-gap: 20px;
+}
+.herobtn button{
+padding: 10px 20px;
+border-radius: 25px;
+border: 2px solid white;
+font-weight: 600;
+}
+.download{
+    background-color: transparent;
+    color: white;
+}
+.hype{
+    display: flex;
+    height: 200px;
+    width: 300px;
+}
+.things{
+    padding: 20px 10px;
+    text-align: left;
+
+}
+.things{
+    display:;
+    text-align:left;
+    
+}
+.info h2{
+    color: red;
+}
+.things h2{
+    color: red;
+}
